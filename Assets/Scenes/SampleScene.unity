@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 52859762}
   - component: {fileID: 52859761}
   m_Layer: 0
-  m_Name: Cube (1)
+  m_Name: Wall1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -440,7 +440,7 @@ GameObject:
   - component: {fileID: 940079758}
   - component: {fileID: 940079757}
   m_Layer: 0
-  m_Name: Cube (3)
+  m_Name: Wall3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -544,8 +544,9 @@ GameObject:
   - component: {fileID: 956748446}
   - component: {fileID: 956748445}
   - component: {fileID: 956748444}
+  - component: {fileID: 956748447}
   m_Layer: 0
-  m_Name: Cube (2)
+  m_Name: Wall2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -560,8 +561,8 @@ Transform:
   m_GameObject: {fileID: 956748442}
   serializedVersion: 2
   m_LocalRotation: {x: -0.0000000048021316, y: 0.8951306, z: 0.00000000471482, w: 0.44580415}
-  m_LocalPosition: {x: 14.659953, y: 1.1699942, z: -5.4700594}
-  m_LocalScale: {x: 10.459905, y: 3.1789994, z: 0.50198}
+  m_LocalPosition: {x: 17.86, y: 1.17, z: -7.89}
+  m_LocalScale: {x: 10.459905, y: 3.1789994, z: 14.331599}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2029674214}
@@ -581,7 +582,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -594,7 +595,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 956748442}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -637,6 +638,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 956748442}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &956748447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 956748442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f271e2f90999f9148949d4d1bf01de98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -722,8 +735,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.22160797, y: 0.5769569, z: -0.16641223, w: -0.7683213}
-  m_LocalPosition: {x: 13.58, y: 14.51, z: -2.83}
+  m_LocalRotation: {x: 0.02503681, y: 0.93291456, z: -0.35308078, w: 0.06616304}
+  m_LocalPosition: {x: 10.058514, y: 23.12745, z: 22.963049}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -742,7 +755,7 @@ GameObject:
   - component: {fileID: 1070369670}
   - component: {fileID: 1070369669}
   m_Layer: 0
-  m_Name: Cube (4)
+  m_Name: Wall4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -846,6 +859,7 @@ GameObject:
   - component: {fileID: 1274605703}
   - component: {fileID: 1274605702}
   - component: {fileID: 1274605701}
+  - component: {fileID: 1274605706}
   - component: {fileID: 1274605705}
   m_Layer: 0
   m_Name: Sphere (2)
@@ -967,6 +981,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1274605706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1274605700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb00f2905d24db846bc27ff282a90d49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1948854765
 GameObject:
   m_ObjectHideFlags: 0
@@ -979,6 +1005,7 @@ GameObject:
   - component: {fileID: 1948854768}
   - component: {fileID: 1948854767}
   - component: {fileID: 1948854766}
+  - component: {fileID: 1948854771}
   - component: {fileID: 1948854770}
   m_Layer: 0
   m_Name: Sphere (1)
@@ -1100,6 +1127,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1948854771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1948854765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb00f2905d24db846bc27ff282a90d49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2029674213
 GameObject:
   m_ObjectHideFlags: 0
@@ -1148,6 +1187,7 @@ GameObject:
   - component: {fileID: 2030822946}
   - component: {fileID: 2030822945}
   - component: {fileID: 2030822944}
+  - component: {fileID: 2030822949}
   - component: {fileID: 2030822948}
   m_Layer: 0
   m_Name: Sphere
@@ -1269,6 +1309,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &2030822949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2030822943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb00f2905d24db846bc27ff282a90d49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
